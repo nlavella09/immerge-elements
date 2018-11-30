@@ -1,0 +1,563 @@
+.fancybox-skin {
+  border-radius: 0;
+  padding: 2px !important;
+}
+
+.fancybox-title-outside-wrap {
+  font-size: 30px;
+  padding-bottom: 8px;
+  width: 80%;
+}
+
+.fancybox-close {
+  top: -35px;
+  right: 0px;
+  background-image: none;
+  background: rgba(0, 0, 0, 0);
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &:after {
+    content: "X";
+    text-decoration: none;
+    border: none;
+  }
+}
+
+html,
+body {
+  font-family: "News Cycle", sans-serif;
+  background: #000000;
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: normal;
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1em;
+  color: #ffffff;
+  line-height: 150%;
+  letter-spacing: 2px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+/*-------------------HERO-------------------------------------*/
+
+#hero {
+  .bg {
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+    width: 300px;
+    @media (max-width: 767px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      float: Left;
+      margin: 20px 0 20px 5%;
+      width: 50%;
+    }
+  }
+  h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 10;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100px;
+    letter-spacing: 10px;
+    @media (max-width: 1070px) {
+      font-size: 80px;
+      top: 14%;
+    }
+    @media (max-width: 767px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      clear: left;
+      margin: 0;
+      margin-left: 50px;
+      font-size: 48px;
+    }
+  }
+  h2 {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    z-index: 10;
+    font-size: 48px;
+    width: 35%;
+    text-align: right;
+    @media (max-width: 1070px) {
+      font-size: 30px;
+    }
+    @media (max-width: 767px) {
+      position: relative;
+      float: right;
+      width: calc(100% - 10%);
+      margin: 0;
+      margin: 0 5% 0 5%;
+      bottom: auto;
+      right: auto;
+      font-size: 32px;
+    }
+  }
+}
+
+#desc-01 {
+  padding: 35px 0 35px 0;
+  @media (max-width: 767px) {
+    padding-top: 0;
+    text-align: left;
+    h2 {
+      text-align: left;
+      font-size: 1.5em;
+    }
+  }
+}
+
+#parts {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 75px 0 75px 0;
+  color: #ffffff;
+  background-image: url("../images/parts-bg.jpg");
+  background-size: cover;
+  @media (max-width: 890px) {
+    background-position: center center;
+  }
+  @media (max-width: 767px) {
+    font-size: 2.5em;
+  }
+  .half {
+    width: calc(50% - 1px);
+    border-right: 2px solid #ffffff;
+    @media (max-width: 890px) {
+      width: 100%;
+    }
+    &:nth-of-type(2) {
+      border-right: none;
+    }
+    &:nth-of-type(1) {
+      @media (max-width: 890px) {
+        border-right: none;
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+#desc-02 {
+  padding: 35px 0 35px 0;
+}
+
+/*-------------------CASE STUDY-------------------------------------*/
+
+#case-study {
+  background-image: url("../images/led-guitar-bg.jpg");
+  background-size: cover;
+  padding: 50px 0 50px 0;
+  @media (max-width: 1350px) {
+    background-position: center center;
+  }
+  .half:nth-of-type(1) {
+    width: calc(50% - 50px);
+    margin-right: 50px;
+  }
+  .half,
+  .half:nth-of-type(1) {
+    @media (max-width: 890px) {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  }
+  p.case {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 5px 0 20px 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 100%;
+  }
+  .video-link {
+    position: relative;
+    width: 100%;
+    float: left;
+    .bg {
+      float: left;
+      width: 100%;
+      z-index: 1;
+      position: relative;
+    }
+    .play-icon {
+      position: absolute;
+      left: calc(50% - 40px);
+      top: calc(50% - 40px);
+      opacity: 0.75;
+      z-index: 10;
+      transition: all 0.5s;
+    }
+    &:hover .play-icon {
+      top: calc(50% - 45px);
+      opacity: 0.9;
+    }
+  }
+  .thumbs {
+    margin-top: 30px;
+    a {
+      width: calc((100% / 6) - (60px / 5));
+      float: left;
+      margin-right: 10px;
+      cursor: pointer;
+      @media (max-width: 767px) {
+        width: calc(33.3% - (20px / 3));
+        margin-bottom: 10px;
+      }
+      &:nth-of-type(3) {
+        @media (max-width: 767px) {
+          margin-right: 0;
+        }
+      }
+      &:nth-of-type(6) {
+        margin-right: 0;
+      }
+      img {
+        width: 100%;
+        float: left;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/*-------------------CTA-------------------------------------*/
+
+#cta {
+  padding: 50px 0 50px 0;
+  h2 {
+    text-align: left;
+  }
+  #contact-form {
+    .form-group {
+      width: calc(33.3% - (20px / 3));
+      float: left;
+      margin: 0 10px 0 0;
+      @media (max-width: 890px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &:nth-of-type(3) {
+        margin: 0;
+      }
+      &:nth-of-type(4),
+      &:nth-of-type(5) {
+        width: 100%;
+        margin: 10px 0 0 0;
+      }
+    }
+    input {
+      width: calc(100%);
+      float: left;
+      font-size: 12px;
+      padding: 10px;
+      margin: 0 0 0 0;
+      border: 1px solid #ffffff;
+      background: #000000;
+      color: #ffffff;
+      text-transform: uppercase;
+      transition: border 1s;
+    }
+    textarea {
+      width: calc(100%);
+      height: 75px;
+      float: left;
+      font-size: 12px;
+      padding: 10px;
+      margin: 0;
+      text-transform: uppercase;
+      border: 1px solid #ffffff;
+      background: #000000;
+      color: #ffffff;
+    }
+    .submit {
+      width: 150px;
+      float: right;
+      border: 0;
+      padding: 10px 0 10px 0;
+      border: 1px solid #ffffff;
+      background-color: #000000;
+      color: #ffffff;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 1s;
+    }
+    .help-block {
+      display: none;
+    }
+    .has-error input {
+      border: 1px solid #f30000;
+    }
+  }
+}
+
+.help-block ul {
+  list-style: none;
+  font-size: 12px;
+  float: left;
+  margin: 0 0 10px 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+
+#desc-03 {
+  padding: 75px 0 75px 0;
+  color: #ffffff;
+  background-image: url("../images/lumens-bg.jpg");
+  background-size: cover;
+  @media (max-width: 890px) {
+    background-size: auto 100%;
+    background-position: center center;
+  }
+  p {
+    text-align: center;
+    font-size: 1.25em;
+  }
+}
+
+/*-------------------PROCESS-------------------------------------*/
+
+#process {
+  h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+  .step {
+    width: 100%;
+    float: left;
+
+    .txt {
+      padding: 100px;
+      width: calc(50%);
+      @media (max-width: 890px) {
+        width: calc(100%);
+        padding: 50px;
+      }
+    }
+    &:nth-of-type(even) img.half {
+      float: right;
+    }
+  }
+  .half {
+    @media (max-width: 890px) {
+      width: 100%;
+    }
+  }
+}
+
+/*-------------------STANDARDS-------------------------------------*/
+
+#standards {
+  padding: 50px 0 50px 0;
+  h2 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.standards-frame {
+  width: calc(100% - 60px);
+  position: relative;
+  float: left;
+  p.title {
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
+}
+
+.quarter {
+  width: 23%;
+  margin: 0 2.6% 0 0;
+  float: left;
+  position: relative;
+  @media (max-width: 890px) {
+    width: 47%;
+  }
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+  .standard-img {
+    width: 100%;
+    float: left;
+    position: relative;
+    transition: height 1s;
+  }
+  img {
+    width: 70%;
+    margin: 15px 15% 15px 15%;
+    position: relative;
+  }
+  .gif {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .image {
+    position: relative;
+    width: 100%;
+    float: left;
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+  &:hover .image {
+    opacity: 0;
+  }
+  &:hover .gif {
+    opacity: 1;
+  }
+}
+
+/*-------------------FOOTER-------------------------------------*/
+
+#big-plans {
+  padding: 50px 0 50px 0;
+  color: #ffffff;
+  background-image: url("../images/green-leds-bg.jpg");
+  background-size: cover;
+  @media (max-width: 890px) {
+    background-size: auto 100%;
+    background-position: center center;
+  }
+  h2 {
+    text-align: left;
+    margin: 0;
+  }
+  p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+footer {
+  padding: 35px 0 35px 0;
+}
+
+p.copyright {
+  float: left;
+  font-size: 0.8em;
+  color: #ffffff;
+  @media (max-width: 890px) {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+p.madein {
+  float: right;
+  font-size: 0.85em;
+  color: #ffffff;
+  text-align: right;
+  @media (max-width: 890px) {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+a.insta {
+  width: 100px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 50px;
+  color: #ffffff;
+  font-size: 0.85em;
+  text-align: center;
+  text-decoration: none;
+  @media (max-width: 890px) {
+    position: relative;
+    left: auto;
+    top: auto;
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.standards-frame {
+  @media (max-width: 890px) {
+    width: 100%;
+  }
+}

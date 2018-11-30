@@ -10,6 +10,13 @@ $(document).ready(function() {
       chase(this, $(this).attr("data-chase-speed"));
     }
   });
+
+  //Case study fancybox modals
+  $('[data-fancybox="gallery"]').fancybox({
+    toolbar: false,
+    infobar: false,
+    loop: true
+  });
 });
 
 //scroll functions
