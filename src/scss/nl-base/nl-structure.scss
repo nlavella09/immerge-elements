@@ -1,0 +1,110 @@
+//NL-static-build-process 0.9.0
+@import "nl-variables";
+
+//Overwrite defaults
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  transition: all 1s;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+//Responsive switches
+.desktop {
+  display: block;
+
+  @media (max-width: $bp-mobile) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: $bp-mobile) {
+    display: block;
+  }
+}
+
+//Structural components
+section,
+.full {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.cont {
+  width: 1125px;
+  margin: 0 auto;
+
+  @media (max-width: $bp-large) {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+
+.small-cont {
+  width: 975px;
+  margin: 0 auto;
+
+  @media (max-width: $bp-tablet) {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+
+.smaller-cont {
+  width: 900px;
+  margin: 0 auto;
+
+  @media (max-width: $bp-tablet) {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+
+//Responsive video frame
+.responsive-video {
+  width: 100%;
+  float: left;
+
+  .video-size-frame {
+    height: 0;
+    padding-bottom: 56.3%;
+    position: relative;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
